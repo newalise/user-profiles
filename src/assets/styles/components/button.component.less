@@ -1,0 +1,17 @@
+.button {
+  border: none;
+  background: chocolate;
+  color: #fff;
+  padding: 10px 30px;
+  transition: .3s;
+  margin-top: 45px;
+
+  &:hover {
+    background: darken(chocolate, 15%);
+    transition: .3s;
+  }
+
+  &:disabled {
+    background: lighten(chocolate, 25%);
+  }
+}

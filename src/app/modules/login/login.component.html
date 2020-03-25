@@ -1,1 +1,16 @@
-<p>login test</p>
+<div class="login">
+  <div class="login-box">
+    <h1 class="login-box__title">Login</h1>
+    <div class="login-form">
+      <form [formGroup]="loginForm">
+        <div class="login-form__input">
+          <input class="login-form__input-el" type="text" placeholder="Name" formControlName="name">
+        </div>
+        <div class="login-form__input" class="login-form__input">
+          <input class="login-form__input-el" type="password" placeholder="Password" formControlName="password">
+        </div>
+        <app-button [text]="'Submit'" (onButtonClick)="onFormSubmit()" [disabled]="disabledButton"></app-button>
+      </form>
+    </div>
+  </div>
+</div>
